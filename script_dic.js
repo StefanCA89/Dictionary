@@ -27,7 +27,7 @@ function getWord() {
     document.getElementById("searchBox").value = ""
     if (dictionary.has(word)) {
         document.getElementById("resultField").innerHTML = `\
-        <div class="card text-white bg-success">\
+        <div class="card w-25 text-white bg-success">\
             <div class="card-body">\
                 Word "${word}" is found. \
             </div>\
