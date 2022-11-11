@@ -15,7 +15,7 @@ function setWord() {
     let word = document.getElementById("submitBox").value
     document.getElementById("submitBox").value = ""
     if (word != "" && areLetters(word)) {
-    dictionary.add(word)
+        dictionary.add(word)
     }
 }
 
@@ -23,7 +23,7 @@ function getWord() {
     let word = document.getElementById("searchBox").value
     document.getElementById("searchBox").value = ""
     if (word == "" || !areLetters(word))
-    return
+        return
     document.getElementById("searchBox").value = ""
     if (dictionary.has(word)) {
         document.getElementById("resultField").innerHTML = `\
